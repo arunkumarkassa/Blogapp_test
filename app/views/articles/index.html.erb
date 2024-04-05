@@ -22,7 +22,7 @@
   </tbody>
   </table>
 
-  <h2><%= link_to "New blog",new_blog_path%></h2>
+  <h2><%= link_to "New blog",articles_path%></h2>
   <h2><%= button_to "Sign out",destroy_user_session_path,method: :delete,data:{ turbo_confirm:"are you sure? you want to logout "}%></h2>
   <p>
     <%= link_to 'Create new article', new_article_path %>
