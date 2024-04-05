@@ -4,10 +4,11 @@
 <p><strong>Description: </strong><%= @article.description %></p>
 
 <div>
-    <%if @blog.image.attached?%>
-    <%= image_tag @blog.image,class:"image-size"%>
-    <%end%>
+  <% if @article.image.attached? %>
+    <%= image_tag @article.image, class: "image-size" %>
+  <% end %>
 </div>
+
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %> |
