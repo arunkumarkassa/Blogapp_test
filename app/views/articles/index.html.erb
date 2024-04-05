@@ -1,0 +1,29 @@
+<h1>Articles listing page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: "Are you sure you want to Delete?" } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  </table>
+
+  <h2><%= link_to "New blog",new_blog_path%></h2>
+  <h2><%= button_to "Sign out",destroy_user_session_path,method: :delete,data:{ turbo_confirm:"are you sure? you want to logout "}%></h2>
+  <p>
+    <%= link_to 'Create new article', new_article_path %>
+  </p>
