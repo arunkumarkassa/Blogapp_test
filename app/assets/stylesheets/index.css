@@ -1,0 +1,85 @@
+/* Page title */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333; /* Changed color */
+}
+
+/* Articles table */
+.articles-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.articles-table th, .articles-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.articles-table th {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* Action link and button */
+.action-link, .action-button, .create-link {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Added transitions */
+  text-align: center;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.action-link:hover, .action-button:hover, .create-link:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+  text-align: center;
+}
+
+/* Pagination */
+.pagination-container {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pagination-container a, .pagination-container span {
+  padding: 5px 10px;
+  margin: 0 3px;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transitions */
+}
+
+.will_paginate .page.current {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transitions */
+}
+
+/* Sign out */
+.sign_out {
+  margin-bottom: 20px;
+  float: right;
+}
+
+.sign_out .action-button:hover {
+  background-color: red;
+  color: white; /* Change color on hover */
+}

@@ -1,0 +1,127 @@
+/* Container Styles */
+.edit-profile-container, .signup-container, .login-container, .form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.edit-profile-container:hover, .signup-container:hover, .login-container:hover, .form-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Styles */
+.edit-profile-title, .cancel-account-title, .signup-title, .login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+.edit-profile-form .field, .signup-form .field, .login-form .field {
+  margin-bottom: 15px;
+}
+
+.edit-profile-form .edit-profile-label, .signup-form .signup-label, .login-form .login-label, label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+.edit-profile-form .edit-profile-input, .signup-form .signup-input, .login-form .login-input, input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-profile-form .edit-profile-input:focus, .signup-form .signup-input:focus, .login-form .login-input:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+/* Button Styles */
+.edit-profile-form .edit-profile-submit, .signup-form .signup-submit, .login-form .login-submit, .actions input[type="submit"], .cancel-account-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-form .edit-profile-submit:hover, .signup-form .signup-submit:hover, .login-form .login-submit:hover, .actions input[type="submit"]:hover, .cancel-account-button:hover {
+  background-color: #0056b3;
+}
+
+/* Link Styles */
+.back-link, .signup-links a, .login-links a, .auth-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover, .signup-links a:hover, .login-links a:hover, .auth-link:hover {
+  color: #0056b3;
+}
+
+/* Checkbox Styles */
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.login-form .login-checkbox {
+  margin-right: 10px;
+}
+
+.login-form .login-checkbox-label {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Error Styles */
+.error-container, #error_explanation {
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.error-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error-list, #error_explanation ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.error-item, #error_explanation li {
+  margin-bottom: 5px;
+}
+
+.error-item:before, #error_explanation li:before {
+  content: "•";
+  color: #721c24;
+  margin-right: 5px;
+}
+
+/* Form Container Background */
+.form-container {
+  background-color: #f9f9f9;
+}
+
+/* Action Container Styles */
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}

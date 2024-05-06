@@ -1,0 +1,35 @@
+.bulk-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .bulk-page-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .bulk-fields {
+    margin-top: 20px;
+  }
+  
+  .bulk-page-field {
+    margin-bottom: 10px;
+  }
+  
+  .bulk-page-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .bulk-page-submit:hover {
+    background-color: #0056b3;
+  }
+  

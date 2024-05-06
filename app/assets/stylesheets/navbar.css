@@ -1,0 +1,95 @@
+/* App navbar */
+.app-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e3e6f0;
+  transition: background-color 0.3s ease; /* Added transition */
+}
+
+.app-navbar:hover {
+  background-color: #e9ecef; /* Lighten background on hover */
+}
+
+/* Navbar logo and name */
+.nav-logo-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.nav-input {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease; /* Added transition */
+}
+
+.nav-input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Specific button styles */
+.nav-new-blog {
+  background-color: #28a745;
+}
+
+.nav-new-blog:hover {
+  background-color: #218838;
+}
+
+.nav-logout {
+  background-color: #dc3545;
+}
+
+.nav-logout:hover {
+  background-color: #c82333;
+}
+
+/* Specific navbar items */
+.nav-bbdu, .nav-bbeu {
+  background-color: blue;
+}
+
+/* Create new article */
+.create_new_article {
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.create-link:hover {
+  background-color: aqua;
+  transform: translateY(-5px); /* Add lift effect on hover */
+}

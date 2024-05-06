@@ -1,0 +1,13 @@
+<% if notice || alert %>
+  <div class="message-container">
+    <div class="message-block">
+      <div>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
+      <div>
+        <button class="close-button" id="close">&#10060;</button>
+      </div>
+    </div>
+  </div>
+<% end %>

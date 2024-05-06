@@ -1,0 +1,105 @@
+/* Form title */
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Changed color */
+}
+
+/* Error messages */
+.form-errors {
+  margin-bottom: 20px;
+}
+
+.error-title {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.error-item {
+  color: #dc3545;
+}
+
+.error-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Article form */
+.article-form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Form fields */
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-input, .form-textarea, .form-file {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Added transition */
+}
+
+.form-input:focus, .form-textarea:focus, .form-file:focus {
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.form-file {
+  padding: 5px;
+}
+
+/* Form actions */
+.form-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Cancel return */
+.cancel_return {
+  margin-top: 20px;
+  float: left;
+}
+
+/* New edit form */
+.new_edit_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Centering image and buttons */
+.image-and-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

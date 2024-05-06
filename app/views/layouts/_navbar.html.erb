@@ -1,0 +1,28 @@
+<div class="app-navbar">
+  <div class="nav-logo">
+    <%= link_to "Articles", articles_path, class: "nav-logo-name" %>
+  </div>
+
+  <div class="nav-form">
+    <%= form_tag search_path, method: :get, class: "search-form" do %>
+      <%= text_field_tag :search, nil, placeholder: "Enter Search string", class: "nav-input" %>
+      <%= submit_tag "Search", class: "nav-submit" %>
+    <% end %>
+  </div>
+
+  <div class="nav-links">
+    <%= link_to "Import",bulkdata_path,class:"nav-btn nav-new-blog nav-bbeu"%>
+    <%= link_to "Export",export_path(format: :csv),class:"nav-btn nav-new-blog nav-bbdu"%>
+  </div>
+
+  <p class="create_new_article">
+    <%= link_to 'Create New Article', new_article_path, class: "create-link" %>
+  </p>
+
+  <div class="nav-links">
+    
+    <%= button_to "Sign out", destroy_user_session_path, method: :delete, 
+                  data: { turbo_confirm: "Are you sure? You want to logout" }, 
+                  class: "nav-btn nav-logout" %>
+  </div>
+</div>

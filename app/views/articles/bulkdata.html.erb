@@ -1,0 +1,15 @@
+<div class="bulk-page">
+  <div class="bulk-page-container">
+  <h2> Import a file here</h2>
+    <%= form_with url: import_path do |f| %>
+      <div class="bulk-fields">
+        <div class="bulk-page-field">
+          <%= f.file_field :file, accept: ".csv" %>
+        </div>
+        <div class="bulk-page-field">
+          <%= f.submit "Import Data", class: "bulk-page-submit" %>
+        </div>  
+      </div>
+    <% end %>
+  </div>
+</div>

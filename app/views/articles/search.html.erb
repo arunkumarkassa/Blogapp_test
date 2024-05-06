@@ -1,0 +1,17 @@
+<h3>Articles with "<%= params[:search] %>" matching records</h3>
+
+<% if @searched_articles.present? %>
+  <div class="search-results">
+    <% @searched_articles.each do |article| %>
+      <div class="article">
+        <div class="article-title">Title: <%= article.title %></div>
+        <div class="article-description">Description: <%= article.description %></div>
+        <div class="article-actions">
+          <%= link_to "Edit", edit_article_path(article), class: "btn btn-edit" %>
+          <%= link_to "Show", article_path(article), class: "btn btn-show" %>
+          <%= button_to "Delete", article_path(article), method: :delete, data: { turbo_confirm: "Are you sure? You want to delete?" }, class: "btn btn-delete" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

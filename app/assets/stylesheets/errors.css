@@ -1,0 +1,50 @@
+/* Message container */
+.message-container {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition */
+}
+
+.message-container:hover {
+  background-color: #f3c0cb; /* Lighten background on hover */
+}
+
+/* Message block */
+.message-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Notice and Alert messages */
+.notice, .alert {
+  margin: 0;
+  font-size: 16px;
+}
+
+.notice {
+  color: #155724;
+}
+
+.alert {
+  color: #721c24;
+}
+
+/* Close button */
+.close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #721c24;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #c82333;
+  transform: scale(1.2); /* Add scaling effect on hover */
+}

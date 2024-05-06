@@ -10,7 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="body">
+    <% if current_user %>
+      <%=render "layouts/navbar" %>
+    <%end%>
+    <%=render "layouts/errors" %>
     <%= yield %>
   </body>
 </html>

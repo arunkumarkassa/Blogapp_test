@@ -1,0 +1,64 @@
+
+.article-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.article-detail {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+.article-image {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.image-size {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+.article-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.action-link, .action-button {
+  margin-bottom: 20px;
+  float: right;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  cursor: pointer;
+}
+
+.action-link:hover, .action-button:hover {
+  margin-bottom: 20px;
+  float: right;
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.action-button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}

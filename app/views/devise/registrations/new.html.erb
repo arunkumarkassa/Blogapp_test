@@ -1,0 +1,47 @@
+<div class="signup-container">
+  <h2 class="signup-title">Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "signup-form" }) do |f| %>
+  <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name",placeholder:"first name",class:"signup-field"%>
+        <% if resource.errors.any? %>
+        <p class="resource-err"><%= resource.errors[:first_name].first %></p>
+        <%end%>
+        <%= f.text_field :last_name, autofocus: true, autocomplete: "last_name",placeholder:"last name",class:"signup-field"%>
+        <% if resource.errors.any? %>
+        <p class="resource-err"><%= resource.errors[:last_name].first %></p>
+        <%end%>
+        
+    <div class="field">
+      <%= f.label :email, class: "signup-label" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "signup-input" %>
+    </div>
+
+    <% if resource.errors.any? %>
+        <p class="resource-err"> E-mail <%= resource.errors[:email].first %></p>
+    <%end%>
+
+    <div class="field">
+      <%= f.label :password, class: "signup-label" %>
+      <%= f.password_field :password, autocomplete: "new-password", class: "signup-input" %>
+    </div>
+
+    <% if resource.errors.any? %>
+        <p class="resource-err"> Password <%= resource.errors[:password].first %></p>
+    <%end%>
+
+    <div class="field">
+      <%= f.label :password_confirmation, class: "signup-label" %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "signup-input" %>
+    </div>
+
+    <% if resource.errors.any? %>
+        <p class="resource-err"> Confirm Password <%= resource.errors[:password_confirmation].first %></p>
+    <%end%>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class: "signup-submit" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links", class: "signup-links" %>
+</div>

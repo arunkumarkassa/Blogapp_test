@@ -1,0 +1,51 @@
+.search-results {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+
+  .article-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .article-description {
+    margin-top: 10px;
+    color: #666;
+    font-weight: bold;
+  }
+
+  .article-actions {
+    margin-top: 10px;
+    display: flex
+    float: right;
+    margin-right: 10px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .btn-edit {
+    background-color: #007bff;
+  }
+
+  .btn-show {
+    background-color: #28a745;
+  }
+
+  .btn-delete {
+    background-color: #dc3545;
+    margin-top: 20px;
+  }
